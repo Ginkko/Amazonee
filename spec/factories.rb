@@ -16,5 +16,10 @@ FactoryGirl.define do
     sale_price 3.33
   end
 
+  factory :purchase do
+    name 'testpurchase'
+    date DateTime.now
+  end
+
 
 end

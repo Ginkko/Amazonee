@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe "the create a purchase path" do
-
   it "creates a new purchase" do
     admin_login
     visit root_path

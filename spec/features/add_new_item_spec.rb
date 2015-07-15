@@ -13,4 +13,12 @@ describe 'Add a new item' do
     expect(page).to have_content("699.99")
     expect(page).to have_content("399.99")
   end
+
+  it 'returns an error if missing fields' do
+    admin_login
+    visit new_item_path
+    click_on 'Create Item'
+    expect(page).to have_content("can't be blank")
+  end
+
 end

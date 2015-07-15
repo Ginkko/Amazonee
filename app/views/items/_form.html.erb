@@ -1,0 +1,10 @@
+<%= bootstrap_form_for(@item) do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :description %>
+  <%= f.number_field :regular_price %>
+  <%= f.number_field :sale_price, step: '.01' %>
+
+  <%= f.hidden_field :user_id, value: current_user.id %>
+
+  <%= f.submit data: {disable_with: 'I T E M I Z I N G'}, class: "btn btn-block btn-primary"%>
+<% end %>

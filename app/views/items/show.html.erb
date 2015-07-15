@@ -4,5 +4,13 @@
   <li><%= @item.description %></li>
   <li><%= @item.regular_price %></li>
   <li><%= @item.sale_price %></li>
-
 </ul>
+
+<% if can? :delete, @item %>
+  <div class="btn btn-group">
+    <div class="btn-block">
+      <%= link_to "Edit", edit_item_path(@item) %>
+      <%= link_to "Delete", item_path(@item), method: :delete %>
+  </div>
+  </div>
+<% end %>

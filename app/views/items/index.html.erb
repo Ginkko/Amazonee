@@ -1,5 +1,6 @@
 <h1>Items</h1>
-
-<% @items.each do |item| %>
-  <%= link_to item.name, item_path(item) %>
+<% if @items.any? %>
+  <% @items.each do |item| %>
+    <%= link_to item.name, item_path(item) %>
+  <% end %>
 <% end %>

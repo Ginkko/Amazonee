@@ -76,6 +76,10 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -91,6 +95,7 @@
         null,
         null,
         1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/amoneyzone/app/models/ability.rb": [
@@ -99,10 +104,14 @@
         null,
         1,
         null,
+        11,
         null,
-        8,
-        8,
-        8,
+        11,
+        11,
+        10,
+        1,
+        1,
+        1,
         null,
         0,
         null,
@@ -128,6 +137,6 @@
         null
       ]
     },
-    "timestamp": 1436994512
+    "timestamp": 1436997257
   }
 }

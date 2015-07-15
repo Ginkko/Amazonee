@@ -37,6 +37,10 @@ class ItemsController < ApplicationController
   end
 
   def destroy
+    Item.find(params[:id]).destroy
+    @items = Item.all
+    flash[:notice] = "Item Deleted"
+    render :index
 
   end
 

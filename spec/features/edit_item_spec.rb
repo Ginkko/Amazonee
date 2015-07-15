@@ -19,5 +19,4 @@ describe "the edit item path" do
     click_on 'Update Item'
     expect(page).to have_content "can't be blank"
   end
-
 end

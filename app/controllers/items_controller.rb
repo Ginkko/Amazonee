@@ -17,11 +17,10 @@ class ItemsController < ApplicationController
   def create
     if @item.save
       flash[:notice] = "Item Saved"
-      render :index
+      render :show
     else
       render :new
     end
-
   end
 
   def edit
@@ -29,7 +28,12 @@ class ItemsController < ApplicationController
   end
 
   def update
-
+    if @item.update(item_params)
+      flash[:notice] = "Item Updated"
+      render :show
+    else
+      render :edit
+    end
   end
 
   def destroy

@@ -25,7 +25,7 @@ class PurchasesController < ApplicationController
     end
 
     def edit
-
+      @items = Item.all
     end
 
     def update

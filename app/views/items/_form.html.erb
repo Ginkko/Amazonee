@@ -1,7 +1,7 @@
 <%= bootstrap_form_for(@item) do |f| %>
   <%= f.text_field :name %>
   <%= f.text_field :description %>
-  <%= f.number_field :regular_price %>
+  <%= f.number_field :regular_price, step: '.01' %>
   <%= f.number_field :sale_price, step: '.01' %>
 
   <%= f.hidden_field :user_id, value: current_user.id %>

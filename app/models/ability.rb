@@ -9,8 +9,8 @@ class Ability
       if user.admin?
         can :manage, :all
       elsif user.id != nil
-        can :crud, Item, user_id: user.id
         can :read, :all
+        can :crud, Item, user_id: user.id
       else
         can :read, :all
       end

@@ -14,6 +14,8 @@ gem 'pry'
 gem 'bcrypt'
 gem 'devise'
 gem 'jquery-turbolinks'
+gem 'faker'
+gem 'factory_girl_rails'
 
 group :development do
   gem 'byebug'
@@ -33,6 +35,5 @@ group :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'capybara'
-  gem 'factory_girl_rails'
   gem 'simplecov', require: false
 end

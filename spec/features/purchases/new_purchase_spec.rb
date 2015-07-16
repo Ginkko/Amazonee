@@ -13,4 +13,12 @@ describe "the create a purchase path" do
     expect(page).to have_content 'Apples'
     expect(page).to_not have_content 'Oranges'
   end
+
+  it 'returns an error when fields missing' do
+    admin_login
+    visit root_path
+    click_link "Log a new Purchase"
+    click_button 'Create Purchase'
+    expect(page).to have_content "can't be blank"
+  end
 end

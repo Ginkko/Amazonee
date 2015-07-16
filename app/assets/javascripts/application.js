@@ -21,4 +21,27 @@
 $(function() {
   $(".alert").alert();
   window.setTimeout(function() { $(".alert").alert().slideUp("slow"); }, 2500);
+
+  $('#items th a').on('click', function () {
+    $.getScript(this.href);
+    return false;
+  });
+
+  $('#items th a, #items .pagination a').on('click', function () {
+      $.getScript(this.href);
+      return false;
+    });
+
+  $('#items_search').submit(function () {
+    $.get(this.action, $(this).serialize(), null, 'script');
+    return false;
+  });
+
+  $('#items-search input').keyup(function () {
+    $.get($('#items-search').attr('action'), $('#items-search').serialize(), null, 'script');
+    return false;
+  });
+
+
+
 });

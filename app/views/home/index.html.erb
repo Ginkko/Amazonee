@@ -1,29 +1,14 @@
 <div class="col-md-6">
   <h3>Items</h3>
-  <%= form_tag home_index_path, :method => 'get' do %>
+  <%= form_tag home_index_path, method: 'get', id: "items-search" do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
+    <%= submit_tag "Search", name: nil %>
   </p>
 <% end %>
-  <table class="table table-striped table-hover table-custom">
-    <tr>
-      <th> <%= sortable "name" %></th>
-      <th> <%= sortable "regular_price" %></th>
-      <th> <%= sortable "sale_price" %></th>
-    </tr>
-    <% @items.each do |item| %>
-      <tr>
-        <td><%= item.name %></td>
-        <td>
-          <%= number_to_currency(item.regular_price, unit: "$") %>
-        </td>
-        <td>
-          <%= number_to_currency(item.sale_price, unit: "$") %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
+<div id="items">
+  <%= render 'items' %>
+</div>
 <%= will_paginate @items %>
 </div>
 <div class="col-md-6">

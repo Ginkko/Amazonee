@@ -13,10 +13,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
-        <li><%= link_to "New Item", new_item_path %></li>
-        <li><%= link_to "Browse Items", items_path %></li>
+        <li><%= link_to "Add a new Item", new_item_path %></li>
         <li><%= link_to "Log a new Purchase", new_purchase_path %></li>
-
+        <li><%= link_to "Browse Items", items_path %></li>
+        <li><%= link_to "Browse Purchases", purchases_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
             <% if current_user.admin? %>

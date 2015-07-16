@@ -1,0 +1,12 @@
+<%= bootstrap_form_for(@purchase) do |f| %>
+  <%= f.text_field :name %>
+  <% if Item.all.any? %>
+  <%= f.collection_check_boxes(:item_ids, @items, :id, :name) %>
+  <% else %>
+  <p>No items are available.</p>
+  <% end %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.datetime_select :date %>
+  <%= f.submit data: {disable_with: 'Logging Purchase...'}, class: "btn btn-block btn-primary"%>
+<% end %>
+  <%= link_to "Cancel", purchases_path, class: "btn btn-block btn-info", remote: true %>

@@ -3,7 +3,10 @@ class PurchasesController < ApplicationController
     load_and_authorize_resource param_method: :purchase_params
 
     def index
-
+      respond_to do |format|
+        format.html { render :index }
+        format.js
+      end
     end
 
     def show
@@ -12,6 +15,10 @@ class PurchasesController < ApplicationController
 
     def new
       @items = Item.all
+      respond_to do |format|
+        format.html { render :new }
+        format.js
+      end
     end
 
     def create

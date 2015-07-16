@@ -1,7 +1,7 @@
 <%= bootstrap_form_for(@purchase) do |f| %>
   <%= f.text_field :name %>
   <% if Item.all.any? %>
-  <%= f.collection_check_boxes(:item_ids, @items, :id, :name) %>
+    <%= f.collection_check_boxes(:item_ids, @items, :id, :name, class: 'checkbox_container') %>
   <% else %>
   <p>No items are available.</p>
   <% end %>

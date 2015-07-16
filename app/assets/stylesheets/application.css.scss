@@ -26,7 +26,19 @@
  // And finally bootswatch style itself*/
  @import "bootswatch/superhero/bootswatch";
 
+$primary-color: #DF691A;
+
+@mixin orange {
+  color: $primary-color;
+}
 
 .orange {
-  color: orange;
+  @include orange
+}
+
+.checkbox {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  @include orange
 }

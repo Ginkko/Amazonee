@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/amoneyzone/app/models/user.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/models/user.rb": [
         1,
         1,
         1,
@@ -11,11 +11,11 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/amoneyzone/app/helpers/application_helper.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/Guest/Desktop/amoneyzone/app/models/item.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/models/item.rb": [
         1,
         1,
         1,
@@ -27,7 +27,7 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/amoneyzone/app/models/purchase.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/models/purchase.rb": [
         1,
         1,
         1,
@@ -36,7 +36,7 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/amoneyzone/app/controllers/items_controller.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/controllers/items_controller.rb": [
         1,
         null,
         1,
@@ -90,7 +90,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/amoneyzone/app/controllers/application_controller.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -98,17 +98,17 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/amoneyzone/app/models/ability.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/models/ability.rb": [
         1,
         1,
         null,
         1,
         null,
-        16,
+        19,
         null,
-        16,
-        16,
-        15,
+        19,
+        19,
+        18,
         1,
         1,
         1,
@@ -136,7 +136,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/amoneyzone/app/controllers/purchases_controller.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/controllers/purchases_controller.rb": [
         1,
         null,
         1,
@@ -177,11 +177,10 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         1,
@@ -191,7 +190,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/amoneyzone/app/controllers/home_controller.rb": [
+      "/Users/Guest/Desktop/Amazonee/app/controllers/home_controller.rb": [
         1,
         null,
         1,
@@ -201,6 +200,6 @@
         null
       ]
     },
-    "timestamp": 1437003218
+    "timestamp": 1437063544
   }
 }

@@ -41,8 +41,7 @@ class PurchasesController < ApplicationController
       Purchase.find(params[:id]).destroy
       @purchases = Purchase.all
       flash[:notice] = "Purchase Deleted"
-      render :index
-
+      redirect_to purchases_path
     end
 
     private

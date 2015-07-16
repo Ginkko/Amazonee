@@ -7,4 +7,13 @@ class Item < ActiveRecord::Base
   validates :sale_price, presence: true
 
   validates :name, uniqueness: true
+
+  def self.search(search)
+    if search
+      where('name LIKE ?', "%#{search}%")
+    else
+      all
+    end
+  end
+
 end

@@ -1,5 +1,11 @@
 <div class="col-md-6">
   <h3>Items</h3>
+  <%= form_tag home_index_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
   <table class="table table-striped table-hover table-custom">
     <tr>
       <th> <%= sortable "name" %></th>

@@ -16,6 +16,7 @@ gem 'devise'
 gem 'jquery-turbolinks'
 gem 'faker'
 gem 'factory_girl_rails'
+gem 'will_paginate', '~> 3.0.6'
 
 group :development do
   gem 'byebug'
